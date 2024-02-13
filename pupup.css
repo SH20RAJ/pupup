@@ -1,0 +1,31 @@
+.pupup {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    background: wheat;
+    z-index: 9999;
+    height: auto;
+    width: auto;
+}
+
+.pupup_title {
+    padding: 10px;
+}
+
+.pupup_container {
+    /* border-top: 2px solid red; */
+}
+.pupup_close {
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    background: rgb(125, 238, 216);
+    transition: all .4s ;
+}
+.pupup_close:hover{
+    background: red;
+}
