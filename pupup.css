@@ -10,14 +10,25 @@
     z-index: 9999;
     height: auto;
     width: auto;
+    overflow: hidden;
+    display: none;
+    transition-delay:  2s;
+
+}
+ .pupup_active .pupup{
+    display: flex;
 }
 
 .pupup_title {
     padding: 10px;
+    border-bottom: 2px solid rgb(48, 48, 205);
+    width: 100%;
+    text-align: center;
 }
 
 .pupup_container {
-    /* border-top: 2px solid red; */
+    padding: 40px;
+    padding-top: 10px;
 }
 .pupup_close {
     position: absolute;
@@ -28,4 +39,42 @@
 }
 .pupup_close:hover{
     background: red;
+    cursor: pointer;
+}
+.pupup_footer {
+    background: red;
+    width: 100%;
+}
+
+.pupup_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    transition: all 2s;
+
+}
+.pupup_buttons button {
+    padding: 10px;
+    margin: 10px;
+    background: transparent;
+    border: 2px solid rgb(69, 209, 217) ;
+    cursor: pointer;
+}
+.pupup_buttons button:hover {
+    background-color: rgb(39, 162, 110);
+    color: antiquewhite;
+    border-bottom: 2px solid;
+    transform: scale(1.3);
+    border-bottom-color: rgb(220, 124, 227);
+}
+.pupup_buttons button:nth-child(2):hover{
+    background-color: red;
+    border-color: blanchedalmond;
+}
+
+@media (max-width:700px) {
+    .pupup {
+        width: 80%;
+    }
 }
